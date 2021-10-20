@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B5D028C271FD638001961CF /* NIBM_ParkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5D028B271FD638001961CF /* NIBM_ParkingApp.swift */; };
+		0B5D028E271FD638001961CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5D028D271FD638001961CF /* ContentView.swift */; };
+		0B5D0290271FD63A001961CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5D028F271FD63A001961CF /* Assets.xcassets */; };
+		0B5D0293271FD63A001961CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5D0292271FD63A001961CF /* Preview Assets.xcassets */; };
+		0B5D029E271FD63A001961CF /* NIBM_ParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5D029D271FD63A001961CF /* NIBM_ParkingTests.swift */; };
+		0B5D02A9271FD63A001961CF /* NIBM_ParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5D02A8271FD63A001961CF /* NIBM_ParkingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B5D029A271FD63A001961CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B5D0280271FD638001961CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B5D0287271FD638001961CF;
+			remoteInfo = "NIBM Parking";
+		};
+		0B5D02A5271FD63A001961CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B5D0280271FD638001961CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B5D0287271FD638001961CF;
+			remoteInfo = "NIBM Parking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B5D0288271FD638001961CF /* NIBM Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NIBM Parking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B5D028B271FD638001961CF /* NIBM_ParkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBM_ParkingApp.swift; sourceTree = "<group>"; };
+		0B5D028D271FD638001961CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0B5D028F271FD63A001961CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B5D0292271FD63A001961CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B5D0294271FD63A001961CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B5D0299271FD63A001961CF /* NIBM ParkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NIBM ParkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B5D029D271FD63A001961CF /* NIBM_ParkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBM_ParkingTests.swift; sourceTree = "<group>"; };
+		0B5D029F271FD63A001961CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B5D02A4271FD63A001961CF /* NIBM ParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NIBM ParkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B5D02A8271FD63A001961CF /* NIBM_ParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBM_ParkingUITests.swift; sourceTree = "<group>"; };
+		0B5D02AA271FD63A001961CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B5D0285271FD638001961CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B5D0296271FD63A001961CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B5D02A1271FD63A001961CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B5D027F271FD638001961CF = {
+			isa = PBXGroup;
+			children = (
+				0B5D028A271FD638001961CF /* NIBM Parking */,
+				0B5D029C271FD63A001961CF /* NIBM ParkingTests */,
+				0B5D02A7271FD63A001961CF /* NIBM ParkingUITests */,
+				0B5D0289271FD638001961CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B5D0289271FD638001961CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B5D0288271FD638001961CF /* NIBM Parking.app */,
+				0B5D0299271FD63A001961CF /* NIBM ParkingTests.xctest */,
+				0B5D02A4271FD63A001961CF /* NIBM ParkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B5D028A271FD638001961CF /* NIBM Parking */ = {
+			isa = PBXGroup;
+			children = (
+				0B5D028B271FD638001961CF /* NIBM_ParkingApp.swift */,
+				0B5D028D271FD638001961CF /* ContentView.swift */,
+				0B5D028F271FD63A001961CF /* Assets.xcassets */,
+				0B5D0294271FD63A001961CF /* Info.plist */,
+				0B5D0291271FD63A001961CF /* Preview Content */,
+			);
+			path = "NIBM Parking";
+			sourceTree = "<group>";
+		};
+		0B5D0291271FD63A001961CF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0B5D0292271FD63A001961CF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B5D029C271FD63A001961CF /* NIBM ParkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B5D029D271FD63A001961CF /* NIBM_ParkingTests.swift */,
+				0B5D029F271FD63A001961CF /* Info.plist */,
+			);
+			path = "NIBM ParkingTests";
+			sourceTree = "<group>";
+		};
+		0B5D02A7271FD63A001961CF /* NIBM ParkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B5D02A8271FD63A001961CF /* NIBM_ParkingUITests.swift */,
+				0B5D02AA271FD63A001961CF /* Info.plist */,
+			);
+			path = "NIBM ParkingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B5D0287271FD638001961CF /* NIBM Parking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B5D02AD271FD63A001961CF /* Build configuration list for PBXNativeTarget "NIBM Parking" */;
+			buildPhases = (
+				0B5D0284271FD638001961CF /* Sources */,
+				0B5D0285271FD638001961CF /* Frameworks */,
+				0B5D0286271FD638001961CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NIBM Parking";
+			productName = "NIBM Parking";
+			productReference = 0B5D0288271FD638001961CF /* NIBM Parking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B5D0298271FD63A001961CF /* NIBM ParkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B5D02B0271FD63A001961CF /* Build configuration list for PBXNativeTarget "NIBM ParkingTests" */;
+			buildPhases = (
+				0B5D0295271FD63A001961CF /* Sources */,
+				0B5D0296271FD63A001961CF /* Frameworks */,
+				0B5D0297271FD63A001961CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B5D029B271FD63A001961CF /* PBXTargetDependency */,
+			);
+			name = "NIBM ParkingTests";
+			productName = "NIBM ParkingTests";
+			productReference = 0B5D0299271FD63A001961CF /* NIBM ParkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B5D02A3271FD63A001961CF /* NIBM ParkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B5D02B3271FD63A001961CF /* Build configuration list for PBXNativeTarget "NIBM ParkingUITests" */;
+			buildPhases = (
+				0B5D02A0271FD63A001961CF /* Sources */,
+				0B5D02A1271FD63A001961CF /* Frameworks */,
+				0B5D02A2271FD63A001961CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B5D02A6271FD63A001961CF /* PBXTargetDependency */,
+			);
+			name = "NIBM ParkingUITests";
+			productName = "NIBM ParkingUITests";
+			productReference = 0B5D02A4271FD63A001961CF /* NIBM ParkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B5D0280271FD638001961CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					0B5D0287271FD638001961CF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0B5D0298271FD63A001961CF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 0B5D0287271FD638001961CF;
+					};
+					0B5D02A3271FD63A001961CF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 0B5D0287271FD638001961CF;
+					};
+				};
+			};
+			buildConfigurationList = 0B5D0283271FD638001961CF /* Build configuration list for PBXProject "NIBM Parking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B5D027F271FD638001961CF;
+			productRefGroup = 0B5D0289271FD638001961CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B5D0287271FD638001961CF /* NIBM Parking */,
+				0B5D0298271FD63A001961CF /* NIBM ParkingTests */,
+				0B5D02A3271FD63A001961CF /* NIBM ParkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B5D0286271FD638001961CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5D0293271FD63A001961CF /* Preview Assets.xcassets in Resources */,
+				0B5D0290271FD63A001961CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B5D0297271FD63A001961CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B5D02A2271FD63A001961CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B5D0284271FD638001961CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5D028E271FD638001961CF /* ContentView.swift in Sources */,
+				0B5D028C271FD638001961CF /* NIBM_ParkingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B5D0295271FD63A001961CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5D029E271FD63A001961CF /* NIBM_ParkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B5D02A0271FD63A001961CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5D02A9271FD63A001961CF /* NIBM_ParkingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B5D029B271FD63A001961CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B5D0287271FD638001961CF /* NIBM Parking */;
+			targetProxy = 0B5D029A271FD63A001961CF /* PBXContainerItemProxy */;
+		};
+		0B5D02A6271FD63A001961CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B5D0287271FD638001961CF /* NIBM Parking */;
+			targetProxy = 0B5D02A5271FD63A001961CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B5D02AB271FD63A001961CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B5D02AC271FD63A001961CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B5D02AE271FD63A001961CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NIBM Parking/Preview Content\"";
+				DEVELOPMENT_TEAM = FPN369L6V4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NIBM Parking/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.cobsccomp201p007.NIBM-Parking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B5D02AF271FD63A001961CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NIBM Parking/Preview Content\"";
+				DEVELOPMENT_TEAM = FPN369L6V4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NIBM Parking/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.cobsccomp201p007.NIBM-Parking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0B5D02B1271FD63A001961CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPN369L6V4;
+				INFOPLIST_FILE = "NIBM ParkingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.cobsccomp201p007.NIBM-ParkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NIBM Parking.app/NIBM Parking";
+			};
+			name = Debug;
+		};
+		0B5D02B2271FD63A001961CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPN369L6V4;
+				INFOPLIST_FILE = "NIBM ParkingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.cobsccomp201p007.NIBM-ParkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NIBM Parking.app/NIBM Parking";
+			};
+			name = Release;
+		};
+		0B5D02B4271FD63A001961CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPN369L6V4;
+				INFOPLIST_FILE = "NIBM ParkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.cobsccomp201p007.NIBM-ParkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NIBM Parking";
+			};
+			name = Debug;
+		};
+		0B5D02B5271FD63A001961CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPN369L6V4;
+				INFOPLIST_FILE = "NIBM ParkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.cobsccomp201p007.NIBM-ParkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NIBM Parking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B5D0283271FD638001961CF /* Build configuration list for PBXProject "NIBM Parking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5D02AB271FD63A001961CF /* Debug */,
+				0B5D02AC271FD63A001961CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B5D02AD271FD63A001961CF /* Build configuration list for PBXNativeTarget "NIBM Parking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5D02AE271FD63A001961CF /* Debug */,
+				0B5D02AF271FD63A001961CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B5D02B0271FD63A001961CF /* Build configuration list for PBXNativeTarget "NIBM ParkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5D02B1271FD63A001961CF /* Debug */,
+				0B5D02B2271FD63A001961CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B5D02B3271FD63A001961CF /* Build configuration list for PBXNativeTarget "NIBM ParkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5D02B4271FD63A001961CF /* Debug */,
+				0B5D02B5271FD63A001961CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B5D0280271FD638001961CF /* Project object */;
+}
