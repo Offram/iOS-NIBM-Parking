@@ -14,6 +14,7 @@ ExportOptions.plist
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+*/xcuserdata/
 xcuserdata/
 
 ## Other
@@ -33,3 +34,6 @@ xcuserdata/
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
+
+
+Pods/
