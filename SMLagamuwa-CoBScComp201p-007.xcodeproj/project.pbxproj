@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -160,7 +160,6 @@
 				E634B63F1109AFCB3B9F71DA /* Pods-SMLagamuwa-CoBScComp201p-007Tests.debug.xcconfig */,
 				1A13AF166580BE1AFDC8BC27 /* Pods-SMLagamuwa-CoBScComp201p-007Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
