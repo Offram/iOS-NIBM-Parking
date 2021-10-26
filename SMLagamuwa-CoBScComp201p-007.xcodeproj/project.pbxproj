@@ -114,6 +114,9 @@
 		0B0AD8582726FAC400A4CD98 /* SMLagamuwa-CoBScComp201p-007 */ = {
 			isa = PBXGroup;
 			children = (
+				0BB6A0522727C3B7001BE507 /* ViewModels */,
+				0BB6A0502727C397001BE507 /* Models */,
+				0BB6A04F2727C37F001BE507 /* Views */,
 				0B98649C272710C30040FF1B /* GoogleService-Info.plist */,
 				0B0AD8592726FAC400A4CD98 /* SMLagamuwa_CoBScComp201p_007App.swift */,
 				0B0AD85B2726FAC400A4CD98 /* ContentView.swift */,
@@ -148,6 +151,27 @@
 				0B0AD8782726FAC600A4CD98 /* Info.plist */,
 			);
 			path = "SMLagamuwa-CoBScComp201p-007UITests";
+			sourceTree = "<group>";
+		};
+		0BB6A04F2727C37F001BE507 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0BB6A0502727C397001BE507 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0BB6A0522727C3B7001BE507 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		C279705083F71D771A7E4BD1 /* Pods */ = {
