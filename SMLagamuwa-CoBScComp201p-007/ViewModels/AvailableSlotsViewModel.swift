@@ -10,6 +10,9 @@ import SwiftUI
 
 class AvailableSlotsViewModel: ObservableObject {
     
+    @Published var slots = [SlotModel]()
+    @Published var slotUnits = [SlotUnit]()
+    
     var slotArray = [
         SlotUnit(slotID:"One", vip: true, slotStatus: SlotStatus.available),
         SlotUnit(slotID:"Two", vip: true, slotStatus: SlotStatus.available),
@@ -24,6 +27,43 @@ class AvailableSlotsViewModel: ObservableObject {
         SlotUnit(slotID:"Eleven", vip: false, slotStatus: SlotStatus.available),
         SlotUnit(slotID:"Twelve", vip: false, slotStatus: SlotStatus.available),
     ]
+    
+    func getSlots() {
+        API().getSlots { (slot) in
+            self.slots = slot
+            self.slotUnits = self.slots.map{ slot in
+                var slotType:Bool
+                
+                switch (slot.type) {
+                case "VIP":
+                    slotType = true;
+                    break;
+                default:
+                    slotType = false;
+                }
+                
+                var slotStatus: SlotStatus;
+                
+                switch (slot.status) {
+                case "AVAILABLE":
+                    slotStatus = SlotStatus.available;
+                    break;
+                case "RESERVED":
+                    slotStatus = SlotStatus.reserved;
+                    break;
+                case "BOOKED":
+                    slotStatus = SlotStatus.booked;
+                    break;
+                default:
+                    slotStatus = SlotStatus.booked;
+                }
+                
+                return SlotUnit(slotID: slot.slotID, vip: slotType, slotStatus: slotStatus)
+            }
+        }
+        
+        
+    }
     
     func getStatusColor(status: SlotStatus) -> Color {
         switch status {

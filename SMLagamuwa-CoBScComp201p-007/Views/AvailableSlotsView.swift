@@ -14,11 +14,14 @@ struct AvailableSlotsView: View {
     var body: some View {
         VStack {
             Text("Available Slots")
-            List(viewModel.slotArray) { item in
+            List(viewModel.slotUnits) { item in
                 VStack (alignment: .leading) {
                     SlotUnitView(slotNumber: item.slotID, vip: item.vip, slotStatus: item.slotStatus)
                 }.listRowBackground(viewModel.getStatusColor(status: item.slotStatus))
             }
+        }
+        .onAppear() {
+            viewModel.getSlots();
         }
 //        LazyVStack {
 //            ForEach(1...10, id: \.self) { count in
