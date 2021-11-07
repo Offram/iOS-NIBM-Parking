@@ -16,7 +16,7 @@ struct SlotUnit: Identifiable {
 
 struct SlotModel: Codable, Identifiable {
     let id: String
-    let slotID: String
+    let slotID: Int
     let status: String
     let type: String
     let userID: String
@@ -35,4 +35,24 @@ struct SlotStatusString {
     let reserved = "RESERVED";
     let booked = "BOOKED";
     let available = "AVAILABLE"
+    
+    func getSlotStatusFromString(status: String) -> SlotStatus {
+        var slotStatus: SlotStatus;
+        
+        switch (status) {
+        case available:
+            slotStatus = SlotStatus.available;
+            break;
+        case reserved:
+            slotStatus = SlotStatus.reserved;
+            break;
+        case booked:
+            slotStatus = SlotStatus.booked;
+            break;
+        default:
+            slotStatus = SlotStatus.booked;
+        }
+        
+        return slotStatus
+    }
 }

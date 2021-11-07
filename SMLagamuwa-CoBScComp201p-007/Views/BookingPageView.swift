@@ -8,8 +8,104 @@
 import SwiftUI
 
 struct BookingPageView: View {
+    
+    @State var selection: String = "1"
+    @StateObject var viewModel = BookingPageViewModel()
+    @State var isScanQRActive = false
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        
+        VStack {
+            
+            Group {
+                TabTitleText("Booking")
+                HStack {
+                    Text("Registration No.")
+                        .padding()
+                    Spacer()
+                    Text("Vehicle No.")
+                        .padding()
+                }
+                .padding()
+                
+                Rectangle().fill(Color.blue).frame(width: 250, height: 2, alignment: .center).padding();
+            }
+            
+            Group {
+                HStack {
+                    Text("Slot: ")
+                    Picker(
+                        selection: $selection,
+                        label: Text("Slot")
+                    ) {
+                        Text("Pick a Slot")
+                            .tag("null")
+                        ForEach(viewModel.availableSlotUnits) { unit in
+                            
+                            if(unit.vip) {
+                                Text("\(unit.slotID) - VIP")
+                                    .tag("\(unit.slotID)")
+                            }
+                            else {
+                                Text("\(unit.slotID)")
+                                    .tag("\(unit.slotID)")
+                            }
+                            
+                        }
+                        .background(Color.green)
+                    }
+                }
+                Text("You have to be within 1 km of NIBM to make a reservation")
+                    .padding()
+                    .multilineTextAlignment(.center)
+                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    DefaultButtonTextView(
+                        text:"Reserve",
+                        foregroundColor: .black,
+                        backgroundColor: .yellow
+                    )
+                }
+                
+                Rectangle().fill(Color.blue).frame(width: 250, height: 2, alignment: .center).padding();
+            }
+            
+            
+            Spacer();
+            
+            Group {
+                Text("Book your slot by scanning QR code")
+                    .padding()
+                    .multilineTextAlignment(.center)
+                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                }
+                
+                NavigationLink(
+                    destination: ScanQRView(),
+                    isActive: $isScanQRActive
+                ){
+                    Button(action: {
+                        isScanQRActive = true
+                    }) {
+                        DefaultButtonTextView(
+                            text:"Scan QR code",
+                            foregroundColor: .white,
+                            backgroundColor: .red
+                        )
+                    }
+                }
+                
+            }
+            
+            Spacer()
+        }
+        .onAppear() {
+            viewModel.getAvailableSlots();
+        }
+        
     }
 }
 

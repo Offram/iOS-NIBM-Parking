@@ -16,7 +16,8 @@ struct SignInView: View {
     
     var body: some View {
         VStack {
-            Text("Sign In");
+            TabTitleText("Sign In")
+                .padding()
             Spacer();
             GreenLineTextView(title: "Email", text: $name, keyboardType: .default);
             GreenLineTextView(title: "Password", text: $pass, keyboardType: .default, secureField: true);
@@ -32,6 +33,7 @@ struct SignInView: View {
                 openURL(URL(string: externalURL)!)
             }
         }
+        .navigationBarTitle("Sign In", displayMode: .inline)
         .padding()
         
     }

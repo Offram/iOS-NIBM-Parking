@@ -14,6 +14,7 @@
 		0B0AD86C2726FAC600A4CD98 /* SMLagamuwa_CoBScComp201p_007Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD86B2726FAC600A4CD98 /* SMLagamuwa_CoBScComp201p_007Tests.swift */; };
 		0B0AD8772726FAC600A4CD98 /* SMLagamuwa_CoBScComp201p_007UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD8762726FAC600A4CD98 /* SMLagamuwa_CoBScComp201p_007UITests.swift */; };
 		0B98649D272710C30040FF1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B98649C272710C30040FF1B /* GoogleService-Info.plist */; };
+		332B758427384DB6004A2C73 /* TabTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332B758327384DB6004A2C73 /* TabTitleText.swift */; };
 		334108A827363757007823A1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334108A727363757007823A1 /* SignInView.swift */; };
 		334108AA27364493007823A1 /* GreenLineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334108A927364493007823A1 /* GreenLineTextView.swift */; };
 		334108AC27364521007823A1 /* InputGreenLineStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334108AB27364521007823A1 /* InputGreenLineStyle.swift */; };
@@ -21,6 +22,9 @@
 		3379901A272A9A65009B34B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33799019272A9A65009B34B7 /* LaunchScreen.storyboard */; };
 		33AC40392736BC4800B8F6A2 /* DefaultButtonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC40382736BC4800B8F6A2 /* DefaultButtonTextView.swift */; };
 		33AC403B2736C7D600B8F6A2 /* BookingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC403A2736C7D600B8F6A2 /* BookingPageView.swift */; };
+		33E83C782737C2BA00801286 /* BookingPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E83C772737C2BA00801286 /* BookingPageViewModel.swift */; };
+		33E83C7A2737DD0B00801286 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E83C792737DD0B00801286 /* SettingsView.swift */; };
+		33E83C7C2737DEA900801286 /* ScanQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E83C7B2737DEA900801286 /* ScanQRView.swift */; };
 		33F241E72734346A0000678A /* AvailableSlotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F241E62734346A0000678A /* AvailableSlotsView.swift */; };
 		33F241EB2734351E0000678A /* SlotUnitStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F241EA2734351E0000678A /* SlotUnitStruct.swift */; };
 		33F241ED2734356C0000678A /* AvailableSlotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F241EC2734356C0000678A /* AvailableSlotsViewModel.swift */; };
@@ -62,6 +66,7 @@
 		0B0AD8782726FAC600A4CD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B98649C272710C30040FF1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		269BDE1530F1DF90C3546FA9 /* Pods_SMLagamuwa_CoBScComp201p_007.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMLagamuwa_CoBScComp201p_007.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		332B758327384DB6004A2C73 /* TabTitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTitleText.swift; sourceTree = "<group>"; };
 		334108A727363757007823A1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		334108A927364493007823A1 /* GreenLineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenLineTextView.swift; sourceTree = "<group>"; };
 		334108AB27364521007823A1 /* InputGreenLineStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGreenLineStyle.swift; sourceTree = "<group>"; };
@@ -69,6 +74,9 @@
 		33799019272A9A65009B34B7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33AC40382736BC4800B8F6A2 /* DefaultButtonTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonTextView.swift; sourceTree = "<group>"; };
 		33AC403A2736C7D600B8F6A2 /* BookingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingPageView.swift; sourceTree = "<group>"; };
+		33E83C772737C2BA00801286 /* BookingPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingPageViewModel.swift; sourceTree = "<group>"; };
+		33E83C792737DD0B00801286 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		33E83C7B2737DEA900801286 /* ScanQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRView.swift; sourceTree = "<group>"; };
 		33F241E62734346A0000678A /* AvailableSlotsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSlotsView.swift; sourceTree = "<group>"; };
 		33F241EA2734351E0000678A /* SlotUnitStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotUnitStruct.swift; sourceTree = "<group>"; };
 		33F241EC2734356C0000678A /* AvailableSlotsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSlotsViewModel.swift; sourceTree = "<group>"; };
@@ -186,6 +194,9 @@
 				334108A927364493007823A1 /* GreenLineTextView.swift */,
 				33AC40382736BC4800B8F6A2 /* DefaultButtonTextView.swift */,
 				33AC403A2736C7D600B8F6A2 /* BookingPageView.swift */,
+				33E83C792737DD0B00801286 /* SettingsView.swift */,
+				33E83C7B2737DEA900801286 /* ScanQRView.swift */,
+				332B758327384DB6004A2C73 /* TabTitleText.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +214,7 @@
 			children = (
 				33F241EC2734356C0000678A /* AvailableSlotsViewModel.swift */,
 				334108AB27364521007823A1 /* InputGreenLineStyle.swift */,
+				33E83C772737C2BA00801286 /* BookingPageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -472,13 +484,17 @@
 				334108AC27364521007823A1 /* InputGreenLineStyle.swift in Sources */,
 				33F2D9E3272D7F2D006B49DB /* Data.swift in Sources */,
 				33AC40392736BC4800B8F6A2 /* DefaultButtonTextView.swift in Sources */,
+				33E83C782737C2BA00801286 /* BookingPageViewModel.swift in Sources */,
 				337177FB2733B09600AD629B /* SlotUnitView.swift in Sources */,
 				33F241EB2734351E0000678A /* SlotUnitStruct.swift in Sources */,
 				33AC403B2736C7D600B8F6A2 /* BookingPageView.swift in Sources */,
+				33E83C7A2737DD0B00801286 /* SettingsView.swift in Sources */,
 				334108AA27364493007823A1 /* GreenLineTextView.swift in Sources */,
 				0B0AD85C2726FAC400A4CD98 /* ContentView.swift in Sources */,
 				33F241ED2734356C0000678A /* AvailableSlotsViewModel.swift in Sources */,
+				332B758427384DB6004A2C73 /* TabTitleText.swift in Sources */,
 				0B0AD85A2726FAC400A4CD98 /* SMLagamuwa_CoBScComp201p_007App.swift in Sources */,
+				33E83C7C2737DEA900801286 /* ScanQRView.swift in Sources */,
 				334108A827363757007823A1 /* SignInView.swift in Sources */,
 				33F241E72734346A0000678A /* AvailableSlotsView.swift in Sources */,
 			);

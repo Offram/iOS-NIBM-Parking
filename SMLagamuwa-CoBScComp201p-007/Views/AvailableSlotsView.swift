@@ -13,7 +13,7 @@ struct AvailableSlotsView: View {
     
     var body: some View {
         VStack {
-            Text("Available Slots")
+            TabTitleText("Available Slots")
             List(viewModel.slotUnits) { item in
                 VStack (alignment: .leading) {
                     SlotUnitView(slotNumber: item.slotID, vip: item.vip, slotStatus: item.slotStatus)
@@ -23,12 +23,6 @@ struct AvailableSlotsView: View {
         .onAppear() {
             viewModel.getSlots();
         }
-//        LazyVStack {
-//            ForEach(1...10, id: \.self) { count in
-//                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Placeholder \(count)")/*@END_MENU_TOKEN@*/
-//            }
-//        }
-        
     }
 }
 
