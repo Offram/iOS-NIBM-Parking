@@ -9,17 +9,20 @@ import SwiftUI
 import FirebaseFirestore
 
 struct ContentView: View {
+    
+    @EnvironmentObject var viewModel: SignInViewModel
+    
     var body: some View {
         NavigationView {
-            TabView() {
-                AvailableSlotsView()
-                    .tabItem { Text("Available Slots") }.tag(1)
-                BookingPageView()
-                    .tabItem { Text("Booking") }.tag(2)
-                SettingsView()
-                    .tabItem { Text("Settings") }.tag(3)
+            if viewModel.signedIn {
+                MainView()
             }
-            .navigationBarTitle("Main Page", displayMode: .inline)
+            else {
+                SignInView()
+            }
+        }
+        .onAppear {
+            viewModel.signedIn = viewModel.isSignedIn
         }
     }
 }

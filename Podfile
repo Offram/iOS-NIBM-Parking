@@ -8,6 +8,7 @@ target 'SMLagamuwa-CoBScComp201p-007' do
   # Pods for SMLagamuwa-CoBScComp201p-007
   pod 'Firebase/AnalyticsWithoutAdIdSupport'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
 
   target 'SMLagamuwa-CoBScComp201p-007Tests' do
     inherit! :search_paths

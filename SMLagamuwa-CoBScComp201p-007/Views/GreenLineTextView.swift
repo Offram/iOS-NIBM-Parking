@@ -10,22 +10,35 @@ import SwiftUI
 struct GreenLineTextView: View {
     var title: String
     @Binding var text: String
+    var prompt: String?
     var keyboardType = UIKeyboardType.default
     var secureField: Bool = false
+    var disableAutoCorrection: Bool = false
+    var autoCapitalization: UITextAutocapitalizationType = .sentences
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         if(secureField) {
             SecureField(title, text: $text)
                 .keyboardType(keyboardType)
+                .disableAutocorrection(disableAutoCorrection)
+                .autocapitalization(autoCapitalization)
                 .textFieldStyle(InputGreenLineStyle())
                 .background(colorScheme == .dark ? Color.black : Color.white)
         }
         else {
             TextField(title, text: $text)
                 .keyboardType(keyboardType)
+                .disableAutocorrection(disableAutoCorrection)
+                .autocapitalization(autoCapitalization)
                 .textFieldStyle(InputGreenLineStyle())
                 .background(colorScheme == .dark ? Color.black : Color.white)
+        }
+        
+        if !(prompt?.isEmpty ?? true) {
+            Text(prompt!)
+                .fixedSize(horizontal: false, vertical: true)
+                .font(.caption)
         }
     }
 }

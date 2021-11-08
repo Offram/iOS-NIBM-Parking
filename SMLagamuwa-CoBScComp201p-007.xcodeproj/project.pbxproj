@@ -30,6 +30,9 @@
 		33F241EB2734351E0000678A /* SlotUnitStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F241EA2734351E0000678A /* SlotUnitStruct.swift */; };
 		33F241ED2734356C0000678A /* AvailableSlotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F241EC2734356C0000678A /* AvailableSlotsViewModel.swift */; };
 		33F2D9E3272D7F2D006B49DB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D9E2272D7F2D006B49DB /* Data.swift */; };
+		33F998B527398D9000DE8C57 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F998B427398D9000DE8C57 /* SignInViewModel.swift */; };
+		33F998B72739929400DE8C57 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F998B62739929400DE8C57 /* MainView.swift */; };
+		33F998B92739A25200DE8C57 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F998B82739A25200DE8C57 /* RegistrationViewModel.swift */; };
 		50554520A38850255BBAFCB0 /* Pods_SMLagamuwa_CoBScComp201p_007Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F0CA14079CCBA73210B41 /* Pods_SMLagamuwa_CoBScComp201p_007Tests.framework */; };
 		D61D986F211FAFBF4ACF4498 /* Pods_SMLagamuwa_CoBScComp201p_007_SMLagamuwa_CoBScComp201p_007UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E209A71A23088B0E211AAE87 /* Pods_SMLagamuwa_CoBScComp201p_007_SMLagamuwa_CoBScComp201p_007UITests.framework */; };
 		E999FF70252701B9DD364FDF /* Pods_SMLagamuwa_CoBScComp201p_007.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269BDE1530F1DF90C3546FA9 /* Pods_SMLagamuwa_CoBScComp201p_007.framework */; };
@@ -83,6 +86,9 @@
 		33F241EA2734351E0000678A /* SlotUnitStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotUnitStruct.swift; sourceTree = "<group>"; };
 		33F241EC2734356C0000678A /* AvailableSlotsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSlotsViewModel.swift; sourceTree = "<group>"; };
 		33F2D9E2272D7F2D006B49DB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		33F998B427398D9000DE8C57 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		33F998B62739929400DE8C57 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		33F998B82739A25200DE8C57 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		4318EE8BDD538BBBF1F12751 /* Pods-SMLagamuwa-CoBScComp201p-007Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMLagamuwa-CoBScComp201p-007Tests.release.xcconfig"; path = "Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007Tests/Pods-SMLagamuwa-CoBScComp201p-007Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9190196ED61078A5EA771158 /* Pods-SMLagamuwa-CoBScComp201p-007Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMLagamuwa-CoBScComp201p-007Tests.debug.xcconfig"; path = "Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007Tests/Pods-SMLagamuwa-CoBScComp201p-007Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D473C6AD8FEFC9FBA400183A /* Pods-SMLagamuwa-CoBScComp201p-007.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMLagamuwa-CoBScComp201p-007.release.xcconfig"; path = "Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007/Pods-SMLagamuwa-CoBScComp201p-007.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +206,7 @@
 				33E83C7B2737DEA900801286 /* ScanQRView.swift */,
 				332B758327384DB6004A2C73 /* TabTitleText.swift */,
 				33CBDDEE2738EAD9003BBA6C /* RegistrationView.swift */,
+				33F998B62739929400DE8C57 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +225,8 @@
 				33F241EC2734356C0000678A /* AvailableSlotsViewModel.swift */,
 				334108AB27364521007823A1 /* InputGreenLineStyle.swift */,
 				33E83C772737C2BA00801286 /* BookingPageViewModel.swift */,
+				33F998B427398D9000DE8C57 /* SignInViewModel.swift */,
+				33F998B82739A25200DE8C57 /* RegistrationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -489,6 +498,8 @@
 				33AC40392736BC4800B8F6A2 /* DefaultButtonTextView.swift in Sources */,
 				33E83C782737C2BA00801286 /* BookingPageViewModel.swift in Sources */,
 				337177FB2733B09600AD629B /* SlotUnitView.swift in Sources */,
+				33F998B92739A25200DE8C57 /* RegistrationViewModel.swift in Sources */,
+				33F998B72739929400DE8C57 /* MainView.swift in Sources */,
 				33CBDDEF2738EAD9003BBA6C /* RegistrationView.swift in Sources */,
 				33F241EB2734351E0000678A /* SlotUnitStruct.swift in Sources */,
 				33AC403B2736C7D600B8F6A2 /* BookingPageView.swift in Sources */,
@@ -498,6 +509,7 @@
 				33F241ED2734356C0000678A /* AvailableSlotsViewModel.swift in Sources */,
 				332B758427384DB6004A2C73 /* TabTitleText.swift in Sources */,
 				0B0AD85A2726FAC400A4CD98 /* SMLagamuwa_CoBScComp201p_007App.swift in Sources */,
+				33F998B527398D9000DE8C57 /* SignInViewModel.swift in Sources */,
 				33E83C7C2737DEA900801286 /* ScanQRView.swift in Sources */,
 				334108A827363757007823A1 /* SignInView.swift in Sources */,
 				33F241E72734346A0000678A /* AvailableSlotsView.swift in Sources */,

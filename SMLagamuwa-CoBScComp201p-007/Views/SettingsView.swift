@@ -11,6 +11,8 @@ struct SettingsView: View {
     
     @State var isSignInActive = false
     
+    @EnvironmentObject var viewModel: SignInViewModel
+    
     var body: some View {
         VStack {
             TabTitleText("Settings")
@@ -43,18 +45,13 @@ struct SettingsView: View {
                     .padding()
             }
             
-            NavigationLink(
-                destination: SignInView(),
-                isActive: $isSignInActive
-            ){
-                Button(action: {
-                    isSignInActive = true
-                }) {
-                    DefaultButtonTextView(
-                        text:"Logout",
-                        backgroundColor: .red
-                    )
-                }
+            Button(action: {
+                viewModel.signOut()
+            }) {
+                DefaultButtonTextView(
+                    text:"Logout",
+                    backgroundColor: .red
+                )
             }
             
             Spacer()

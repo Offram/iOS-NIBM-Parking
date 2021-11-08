@@ -11,21 +11,42 @@ struct SignInView: View {
     
     @State var email: String = ""
     @State var pass: String = ""
+    
+    @EnvironmentObject var viewModel: SignInViewModel
+    
     private let externalURL = "https://www.apple.com"
     @Environment(\.openURL) var openURL
     @State var isRegistrationActive = false
     
     var body: some View {
         VStack {
-            TabTitleText("Sign In")
+            TabTitleText("NIBM Parking")
                 .padding()
             Spacer();
             
-            GreenLineTextView(title: "Email", text: $email, keyboardType: .default);
-            GreenLineTextView(title: "Password", text: $pass, keyboardType: .default, secureField: true);
+            GreenLineTextView(
+                title: "Email",
+                text: $email,
+                keyboardType: .default,
+                disableAutoCorrection: true,
+                autoCapitalization: .none);
+            GreenLineTextView(
+                title: "Password",
+                text: $pass,
+                keyboardType: .default,
+                secureField: true,
+                disableAutoCorrection: true,
+                autoCapitalization: .none);
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                DefaultButtonTextView(text:"Login", backgroundColor: .green)
+            Button(action: {
+                guard !email.isEmpty, !pass.isEmpty else {
+                    return
+                }
+                
+                viewModel.signIn(email: email, password: pass)
+                
+            }) {
+                DefaultButtonTextView(text:"Sign In", backgroundColor: .green)
             }
             
             Spacer()

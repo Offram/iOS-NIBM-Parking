@@ -9,34 +9,85 @@ import SwiftUI
 
 struct RegistrationView: View {
     
-    @State var email: String = ""
-    @State var pass: String = ""
-    @State var repass: String = ""
-    @State var nibmID: String = ""
-    @State var vehicleNo: String = ""
-    @State var name: String = ""
+    @EnvironmentObject var viewModel: SignInViewModel
+    @ObservedObject var regViewModel = RegistrationViewModel()
     
     var body: some View {
         VStack {
             Spacer()
             
-            GreenLineTextView(title: "Email", text: $email, keyboardType: .default);
+            Form {
+                
+                Section {
+                    GreenLineTextView(
+                        title: "Email",
+                        text: $regViewModel.email,
+                        prompt: regViewModel.emailPrompt,
+                        disableAutoCorrection: true,
+                        autoCapitalization: .none
+                    );
+                }
+                
+                Section(footer: Text("Password must be at least 8 characters long")) {
+                    GreenLineTextView(
+                        title: "Password",
+                        text: $regViewModel.pass,
+                        prompt: regViewModel.passwordPrompt,
+                        secureField: true,
+                        disableAutoCorrection: true,
+                        autoCapitalization: .none
+                        
+                    );
+                    
+                    GreenLineTextView(
+                        title: "Re-type Password",
+                        text: $regViewModel.repass,
+                        prompt: regViewModel.confirmPwPrompt,
+                        secureField: true
+                    );
+                }
+                
+                Section {
+                    
+                    GreenLineTextView(
+                        title: "NIBM ID",
+                        text: $regViewModel.nibmID,
+                        prompt: regViewModel.nibmIdPrompt
+                    );
+                    
+                    GreenLineTextView(
+                        title: "Vehicle Number",
+                        text: $regViewModel.vehicleNo,
+                        prompt: ""
+                    );
+                    
+                    GreenLineTextView(
+                        title: "Name",
+                        text: $regViewModel.name,
+                        prompt: ""
+                    );
+                }
+            }
             
-            GreenLineTextView(title: "Password", text: $pass, keyboardType: .default, secureField: true);
             
-            GreenLineTextView(title: "Re-type Password", text: $repass, keyboardType: .default, secureField: true);
-            
-            GreenLineTextView(title: "NIBM ID", text: $nibmID, keyboardType: .default);
-            
-            GreenLineTextView(title: "Vehicle Number", text: $vehicleNo, keyboardType: .default);
-            
-            GreenLineTextView(title: "Name", text: $name, keyboardType: .default);
             Spacer()
             
-            Button(action: {}) {
+            Button(action: {
+                
+                guard !regViewModel.email.isEmpty, !regViewModel.pass.isEmpty else {
+                    return
+                }
+                
+                viewModel.signUp(
+                    email: regViewModel.email,
+                    password: regViewModel.pass)
+                
+            }) {
                 DefaultButtonTextView(
                     text:"Register"
                 )
+                    .opacity(regViewModel.isSugnUpComplete ? 1 : 0.6)
+                    .disabled(!regViewModel.isSugnUpComplete)
             }
         }
         .navigationBarTitle("Registration", displayMode: .inline)

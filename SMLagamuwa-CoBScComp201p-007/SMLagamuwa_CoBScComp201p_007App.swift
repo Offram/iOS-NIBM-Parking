@@ -16,7 +16,9 @@ struct SMLagamuwa_CoBScComp201p_007App: App {
     
     var body: some Scene {
         WindowGroup {
+            let viewModel = SignInViewModel()
             ContentView()
+                .environmentObject(viewModel)
         }
     }
 }
