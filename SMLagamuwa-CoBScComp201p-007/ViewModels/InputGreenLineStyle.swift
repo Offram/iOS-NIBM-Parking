@@ -17,7 +17,6 @@ struct InputGreenLineStyle: TextFieldStyle {
                         .padding(.horizontal, 40.0)
                         .frame(height: 1)
                         .foregroundColor(Color.green.opacity(0.6)), alignment: .bottom)
-            .padding(.bottom, 20)
         
     }
 }

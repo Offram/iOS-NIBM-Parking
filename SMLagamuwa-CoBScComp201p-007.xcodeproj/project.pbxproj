@@ -18,6 +18,7 @@
 		334108A827363757007823A1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334108A727363757007823A1 /* SignInView.swift */; };
 		334108AA27364493007823A1 /* GreenLineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334108A927364493007823A1 /* GreenLineTextView.swift */; };
 		334108AC27364521007823A1 /* InputGreenLineStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334108AB27364521007823A1 /* InputGreenLineStyle.swift */; };
+		33665459273C487400570177 /* UserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33665458273C487400570177 /* UserStruct.swift */; };
 		337177FB2733B09600AD629B /* SlotUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337177FA2733B09600AD629B /* SlotUnitView.swift */; };
 		3379901A272A9A65009B34B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33799019272A9A65009B34B7 /* LaunchScreen.storyboard */; };
 		33AC40392736BC4800B8F6A2 /* DefaultButtonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC40382736BC4800B8F6A2 /* DefaultButtonTextView.swift */; };
@@ -74,6 +75,7 @@
 		334108A727363757007823A1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		334108A927364493007823A1 /* GreenLineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenLineTextView.swift; sourceTree = "<group>"; };
 		334108AB27364521007823A1 /* InputGreenLineStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGreenLineStyle.swift; sourceTree = "<group>"; };
+		33665458273C487400570177 /* UserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStruct.swift; sourceTree = "<group>"; };
 		337177FA2733B09600AD629B /* SlotUnitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotUnitView.swift; sourceTree = "<group>"; };
 		33799019272A9A65009B34B7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33AC40382736BC4800B8F6A2 /* DefaultButtonTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonTextView.swift; sourceTree = "<group>"; };
@@ -197,8 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				33F241E62734346A0000678A /* AvailableSlotsView.swift */,
-				337177FA2733B09600AD629B /* SlotUnitView.swift */,
 				334108A727363757007823A1 /* SignInView.swift */,
+				337177FA2733B09600AD629B /* SlotUnitView.swift */,
 				334108A927364493007823A1 /* GreenLineTextView.swift */,
 				33AC40382736BC4800B8F6A2 /* DefaultButtonTextView.swift */,
 				33AC403A2736C7D600B8F6A2 /* BookingPageView.swift */,
@@ -215,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				33F241EA2734351E0000678A /* SlotUnitStruct.swift */,
+				33665458273C487400570177 /* UserStruct.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				0B0AD85A2726FAC400A4CD98 /* SMLagamuwa_CoBScComp201p_007App.swift in Sources */,
 				33F998B527398D9000DE8C57 /* SignInViewModel.swift in Sources */,
 				33E83C7C2737DEA900801286 /* ScanQRView.swift in Sources */,
+				33665459273C487400570177 /* UserStruct.swift in Sources */,
 				334108A827363757007823A1 /* SignInView.swift in Sources */,
 				33F241E72734346A0000678A /* AvailableSlotsView.swift in Sources */,
 			);

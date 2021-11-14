@@ -9,8 +9,6 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    @State var isSignInActive = false
-    
     @EnvironmentObject var viewModel: SignInViewModel
     
     var body: some View {
@@ -20,28 +18,28 @@ struct SettingsView: View {
             HStack {
                 Text("NIBM ID : ")
                     .padding()
-                Text("[NIBM ID]")
+                Text(viewModel.user?.nibmId ?? "")
                     .padding()
             }
             
             HStack {
                 Text("Vehicle Number : ")
                     .padding()
-                Text("[Vehicle No.]")
+                Text(viewModel.user?.vehicleNo ?? "")
                     .padding()
             }
             
             HStack {
                 Text("Name : ")
                     .padding()
-                Text("[Name]")
+                Text(viewModel.user?.name ?? "")
                     .padding()
             }
             
             HStack {
                 Text("NIC : ")
                     .padding()
-                Text("[NIC]")
+                Text(viewModel.user?.nic ?? "")
                     .padding()
             }
             

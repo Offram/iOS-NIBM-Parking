@@ -9,6 +9,8 @@ import SwiftUI
 
 struct BookingPageView: View {
     
+    @EnvironmentObject var signInviewModel: SignInViewModel
+    
     @State var selection: String = "1"
     @StateObject var viewModel = BookingPageViewModel()
     @State var isScanQRActive = false
@@ -22,10 +24,10 @@ struct BookingPageView: View {
             Group {
                 TabTitleText("Booking")
                 HStack {
-                    Text("Registration No.")
+                    Text(signInviewModel.user?.nibmId ?? "")
                         .padding()
                     Spacer()
-                    Text("Vehicle No.")
+                    Text(signInviewModel.user?.vehicleNo ?? "")
                         .padding()
                 }
                 .padding()
