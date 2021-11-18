@@ -29,7 +29,7 @@ struct ReserveSlotView: View {
                         Spacer()
                         Text("Distance: \(viewModel.distanceFromNibm ?? 0)")
                             .padding()
-                            .background(viewModel.getBackgroundColorOnDistance())
+                            .background(viewModel.getBackgroundColorOnDistance)
                     }
                     Spacer()
                     
@@ -48,8 +48,8 @@ struct ReserveSlotView: View {
                                 foregroundColor: .black,
                                 backgroundColor: .yellow
                             )
-                                .opacity(viewModel.isDistanceValid() ? 1 : 0.6)
-                                .disabled(!viewModel.isDistanceValid())
+                                .opacity(viewModel.isDistanceValid ? 1 : 0.6)
+                                .disabled(!viewModel.isDistanceValid)
                         }
                     }
                     

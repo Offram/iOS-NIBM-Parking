@@ -86,15 +86,15 @@ class ReserveSlotViewModel: NSObject, ObservableObject, CLLocationManagerDelegat
         }
     }
     
-    func isDistanceValid() -> Bool {
+    var isDistanceValid: Bool {
         if((self.distanceFromNibm ?? 9999) < 1000) {
             return true
         }
         return false
     }
     
-    func getBackgroundColorOnDistance() -> Color {
-        if(self.isDistanceValid()) {
+    var getBackgroundColorOnDistance: Color {
+        if(self.isDistanceValid) {
             return Color.green
         }
         return Color.yellow
