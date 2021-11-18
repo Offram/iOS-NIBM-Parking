@@ -110,6 +110,7 @@ struct RegistrationView: View {
                     .opacity(regViewModel.isSignUpComplete ? 1 : 0.6)
                     .disabled(!regViewModel.isSignUpComplete)
             }
+            .accessibility(identifier: "RegistrationView_RegisterBtn")
         }
         .navigationBarTitle("Registration", displayMode: .inline)
     }
