@@ -13,6 +13,7 @@ class API {
     init() {
         self.database = Firestore.firestore();
         self.userRef = database.collection("Users");
+        self.slotRef = database.collection("Slots");
     }
     
     var listener: ListenerRegistration?;
@@ -20,13 +21,13 @@ class API {
     
     let database: Firestore;
     let userRef: CollectionReference;
+    let slotRef: CollectionReference;
     
     func getSlots(completion: @escaping ([SlotModel]) -> ()) {
         //        let docRef = database.document("TestDocument/test");
         //        docRef.setData(["text": "test"]);
         
-        let colRef = database.collection("Slots");
-        listener = colRef.order(by: "slotID", descending: false)
+        listener = self.slotRef.order(by: "slotID", descending: false)
             .addSnapshotListener { querySnapshot, error in
                 guard let documents = querySnapshot?.documents else {
                     print("Error fetching documents: \(error!)")
@@ -50,8 +51,7 @@ class API {
     
     func getAvailableSlots(completion: @escaping ([SlotModel]) -> ()) {
         
-        let colRef = database.collection("Slots");
-        availableSlotListener = colRef
+        availableSlotListener = self.slotRef
             .order(
                 by: "slotID",
                 descending: true)
@@ -89,7 +89,7 @@ class API {
             "nic": userData.nic
         ]
         
-        let docRef = userRef.addDocument(data: user)
+        let docRef = self.userRef.addDocument(data: user)
         
         let newUser = UserModel(
             id: docRef.documentID,
@@ -107,7 +107,7 @@ class API {
     
     func getUser(email: String ,completion: @escaping (UserModel) -> ()) {
         
-        userRef
+        self.userRef
             .whereField("email", isEqualTo: email)
             .limit(to: 1)
             .getDocuments { doc, error in
@@ -132,5 +132,36 @@ class API {
                     completion(user)
                 }
             }
+    }
+    
+    func setSlot(user: UserModel, slotId: String, tragetStatus: SlotStatus, completion: @escaping (Bool) -> ()) {
+        
+        var newSlot: [String:String];
+        switch tragetStatus {
+        case SlotStatus.reserved:
+            newSlot =  [
+                "userID": user.id,
+                "vehicleNo": user.vehicleNo,
+                "status": SlotStatusString().reserved
+            ]
+            break;
+        case SlotStatus.booked:
+            newSlot =  [
+                "userID": user.id,
+                "vehicleNo": user.vehicleNo,
+                "status": SlotStatusString().booked
+            ]
+            break;
+        default:
+            
+            newSlot =  [:]
+        }
+        
+        
+        self.slotRef.document("\(slotId)").setData(newSlot, merge: true)
+        
+        DispatchQueue.main.async {
+            completion(true)
+        }
     }
 }

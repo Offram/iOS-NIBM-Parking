@@ -21,7 +21,7 @@ struct ScanQRView: View {
             
             Button(action: {}) {
                 DefaultButtonTextView(
-                    text:"Book Slot"
+                    text:"Reserve Slot"
                 )
             }
         }

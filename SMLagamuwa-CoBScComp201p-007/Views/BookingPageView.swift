@@ -11,9 +11,10 @@ struct BookingPageView: View {
     
     @EnvironmentObject var signInviewModel: SignInViewModel
     
-    @State var selection: String = "1"
+    @State var selection: String = "null"
     @StateObject var viewModel = BookingPageViewModel()
     @State var isScanQRActive = false
+    @State var isReserveViewActive = false
     
     
     var body: some View {
@@ -59,17 +60,29 @@ struct BookingPageView: View {
                         .background(Color.green)
                     }
                 }
-                Text("You have to be within 1 km of NIBM to make a reservation")
+                Text("You have to be within 1 km of NIBM to book a slot")
                     .padding()
                     .multilineTextAlignment(.center)
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    DefaultButtonTextView(
-                        text:"Reserve",
-                        foregroundColor: .black,
-                        backgroundColor: .yellow
-                    )
+                NavigationLink(
+                    destination: ReserveSlotView(
+                        slotId: selection
+                    ),
+                    isActive: $isReserveViewActive
+                ){
+                    Button(action: {
+                        isReserveViewActive = true
+                    }) {
+                        DefaultButtonTextView(
+                            text:"Book",
+                            foregroundColor: .black,
+                            backgroundColor: .yellow
+                        )
+                    }
+                    
                 }
+                .opacity((selection != "null") ? 1 : 0.6)
+                .disabled(selection == "null")
                 
                 Rectangle().fill(Color.blue).frame(width: 250, height: 2, alignment: .center).padding();
             }
@@ -81,9 +94,6 @@ struct BookingPageView: View {
                 Text("Book your slot by scanning QR code")
                     .padding()
                     .multilineTextAlignment(.center)
-                
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                }
                 
                 NavigationLink(
                     destination: ScanQRView(),

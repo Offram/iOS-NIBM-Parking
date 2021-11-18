@@ -22,6 +22,7 @@ struct SlotUnitView: View {
                 Text("VIP")
                     .bold()
                     .font(.system(size: 12))
+                    .foregroundColor(Color.black)
             }
         }
     }

@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var tabSelection = 1
+    
     var body: some View {
-        TabView() {
-            AvailableSlotsView()
+        TabView(selection: $tabSelection) {
+            AvailableSlotsView(tabSelection: $tabSelection)
                 .tabItem { Text("Available Slots") }.tag(1)
             BookingPageView()
                 .tabItem { Text("Booking") }.tag(2)
@@ -18,6 +20,7 @@ struct MainView: View {
                 .tabItem { Text("Settings") }.tag(3)
         }
         .navigationBarTitle("Main Page", displayMode: .inline)
+        .navigationBarBackButtonHidden(true)
     }
 }
 

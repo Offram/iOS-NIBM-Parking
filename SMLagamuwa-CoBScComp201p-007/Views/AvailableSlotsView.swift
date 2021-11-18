@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AvailableSlotsView: View {
     
+    @Binding var tabSelection: Int
     @StateObject var viewModel = AvailableSlotsViewModel()
     
     var body: some View {
@@ -18,7 +19,12 @@ struct AvailableSlotsView: View {
                 
                 List(viewModel.slotUnits) { item in
                     VStack (alignment: .leading) {
-                        SlotUnitView(slotNumber: item.slotID, vip: item.vip, slotStatus: item.slotStatus)
+                        Button(action: {
+                            self.tabSelection = 2
+                        }) {
+                            SlotUnitView(slotNumber: item.slotID, vip: item.vip, slotStatus: item.slotStatus)
+                        }
+                        .disabled(item.slotStatus != SlotStatus.available)
                     }
                     .listRowBackground(viewModel.getStatusColor(status: item.slotStatus))
                 }
@@ -33,7 +39,8 @@ struct AvailableSlotsView: View {
 }
 
 struct AvailableSlotsView_Previews: PreviewProvider {
+    @State static private var tabSelection = 1
     static var previews: some View {
-        AvailableSlotsView()
+        AvailableSlotsView(tabSelection: $tabSelection)
     }
 }

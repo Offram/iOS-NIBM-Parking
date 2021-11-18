@@ -19,6 +19,8 @@
 		334108AA27364493007823A1 /* GreenLineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334108A927364493007823A1 /* GreenLineTextView.swift */; };
 		334108AC27364521007823A1 /* InputGreenLineStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334108AB27364521007823A1 /* InputGreenLineStyle.swift */; };
 		33665459273C487400570177 /* UserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33665458273C487400570177 /* UserStruct.swift */; };
+		33675360274163C600E02266 /* ReserveSlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3367535F274163C600E02266 /* ReserveSlotView.swift */; };
+		33675362274174F000E02266 /* ReserveSlotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33675361274174F000E02266 /* ReserveSlotViewModel.swift */; };
 		337177FB2733B09600AD629B /* SlotUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337177FA2733B09600AD629B /* SlotUnitView.swift */; };
 		3379901A272A9A65009B34B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33799019272A9A65009B34B7 /* LaunchScreen.storyboard */; };
 		33AC40392736BC4800B8F6A2 /* DefaultButtonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC40382736BC4800B8F6A2 /* DefaultButtonTextView.swift */; };
@@ -76,6 +78,8 @@
 		334108A927364493007823A1 /* GreenLineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenLineTextView.swift; sourceTree = "<group>"; };
 		334108AB27364521007823A1 /* InputGreenLineStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGreenLineStyle.swift; sourceTree = "<group>"; };
 		33665458273C487400570177 /* UserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStruct.swift; sourceTree = "<group>"; };
+		3367535F274163C600E02266 /* ReserveSlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveSlotView.swift; sourceTree = "<group>"; };
+		33675361274174F000E02266 /* ReserveSlotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveSlotViewModel.swift; sourceTree = "<group>"; };
 		337177FA2733B09600AD629B /* SlotUnitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotUnitView.swift; sourceTree = "<group>"; };
 		33799019272A9A65009B34B7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33AC40382736BC4800B8F6A2 /* DefaultButtonTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonTextView.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 				332B758327384DB6004A2C73 /* TabTitleText.swift */,
 				33CBDDEE2738EAD9003BBA6C /* RegistrationView.swift */,
 				33F998B62739929400DE8C57 /* MainView.swift */,
+				3367535F274163C600E02266 /* ReserveSlotView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				33E83C772737C2BA00801286 /* BookingPageViewModel.swift */,
 				33F998B427398D9000DE8C57 /* SignInViewModel.swift */,
 				33F998B82739A25200DE8C57 /* RegistrationViewModel.swift */,
+				33675361274174F000E02266 /* ReserveSlotViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -497,10 +503,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				334108AC27364521007823A1 /* InputGreenLineStyle.swift in Sources */,
+				33675360274163C600E02266 /* ReserveSlotView.swift in Sources */,
 				33F2D9E3272D7F2D006B49DB /* Data.swift in Sources */,
 				33AC40392736BC4800B8F6A2 /* DefaultButtonTextView.swift in Sources */,
 				33E83C782737C2BA00801286 /* BookingPageViewModel.swift in Sources */,
 				337177FB2733B09600AD629B /* SlotUnitView.swift in Sources */,
+				33675362274174F000E02266 /* ReserveSlotViewModel.swift in Sources */,
 				33F998B92739A25200DE8C57 /* RegistrationViewModel.swift in Sources */,
 				33F998B72739929400DE8C57 /* MainView.swift in Sources */,
 				33CBDDEF2738EAD9003BBA6C /* RegistrationView.swift in Sources */,
