@@ -6,11 +6,24 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 struct ContentView: View {
+    
+    @EnvironmentObject var viewModel: SignInViewModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            if viewModel.signedIn {
+                MainView()
+            }
+            else {
+                SignInView()
+            }
+        }
+        .onAppear {
+            viewModel.signedIn = viewModel.isSignedIn
+        }
     }
 }
 

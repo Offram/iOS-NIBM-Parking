@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,32 @@
 		0B0AD8612726FAC600A4CD98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B0AD8602726FAC600A4CD98 /* Preview Assets.xcassets */; };
 		0B0AD86C2726FAC600A4CD98 /* SMLagamuwa_CoBScComp201p_007Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD86B2726FAC600A4CD98 /* SMLagamuwa_CoBScComp201p_007Tests.swift */; };
 		0B0AD8772726FAC600A4CD98 /* SMLagamuwa_CoBScComp201p_007UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD8762726FAC600A4CD98 /* SMLagamuwa_CoBScComp201p_007UITests.swift */; };
+		0B98649D272710C30040FF1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B98649C272710C30040FF1B /* GoogleService-Info.plist */; };
+		332B758427384DB6004A2C73 /* TabTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332B758327384DB6004A2C73 /* TabTitleText.swift */; };
+		334108A827363757007823A1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334108A727363757007823A1 /* SignInView.swift */; };
+		334108AA27364493007823A1 /* GreenLineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334108A927364493007823A1 /* GreenLineTextView.swift */; };
+		334108AC27364521007823A1 /* InputGreenLineStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334108AB27364521007823A1 /* InputGreenLineStyle.swift */; };
+		33665459273C487400570177 /* UserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33665458273C487400570177 /* UserStruct.swift */; };
+		33675360274163C600E02266 /* ReserveSlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3367535F274163C600E02266 /* ReserveSlotView.swift */; };
+		33675362274174F000E02266 /* ReserveSlotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33675361274174F000E02266 /* ReserveSlotViewModel.swift */; };
+		337177FB2733B09600AD629B /* SlotUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337177FA2733B09600AD629B /* SlotUnitView.swift */; };
+		3379901A272A9A65009B34B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33799019272A9A65009B34B7 /* LaunchScreen.storyboard */; };
+		33AC40392736BC4800B8F6A2 /* DefaultButtonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC40382736BC4800B8F6A2 /* DefaultButtonTextView.swift */; };
+		33AC403B2736C7D600B8F6A2 /* BookingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC403A2736C7D600B8F6A2 /* BookingPageView.swift */; };
+		33CBDDEF2738EAD9003BBA6C /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CBDDEE2738EAD9003BBA6C /* RegistrationView.swift */; };
+		33E83C782737C2BA00801286 /* BookingPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E83C772737C2BA00801286 /* BookingPageViewModel.swift */; };
+		33E83C7A2737DD0B00801286 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E83C792737DD0B00801286 /* SettingsView.swift */; };
+		33E83C7C2737DEA900801286 /* ScanQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E83C7B2737DEA900801286 /* ScanQRView.swift */; };
+		33F241E72734346A0000678A /* AvailableSlotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F241E62734346A0000678A /* AvailableSlotsView.swift */; };
+		33F241EB2734351E0000678A /* SlotUnitStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F241EA2734351E0000678A /* SlotUnitStruct.swift */; };
+		33F241ED2734356C0000678A /* AvailableSlotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F241EC2734356C0000678A /* AvailableSlotsViewModel.swift */; };
+		33F2D9E3272D7F2D006B49DB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D9E2272D7F2D006B49DB /* Data.swift */; };
+		33F998B527398D9000DE8C57 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F998B427398D9000DE8C57 /* SignInViewModel.swift */; };
+		33F998B72739929400DE8C57 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F998B62739929400DE8C57 /* MainView.swift */; };
+		33F998B92739A25200DE8C57 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F998B82739A25200DE8C57 /* RegistrationViewModel.swift */; };
+		50554520A38850255BBAFCB0 /* Pods_SMLagamuwa_CoBScComp201p_007Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F0CA14079CCBA73210B41 /* Pods_SMLagamuwa_CoBScComp201p_007Tests.framework */; };
+		D61D986F211FAFBF4ACF4498 /* Pods_SMLagamuwa_CoBScComp201p_007_SMLagamuwa_CoBScComp201p_007UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E209A71A23088B0E211AAE87 /* Pods_SMLagamuwa_CoBScComp201p_007_SMLagamuwa_CoBScComp201p_007UITests.framework */; };
+		E999FF70252701B9DD364FDF /* Pods_SMLagamuwa_CoBScComp201p_007.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269BDE1530F1DF90C3546FA9 /* Pods_SMLagamuwa_CoBScComp201p_007.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +71,38 @@
 		0B0AD8722726FAC600A4CD98 /* SMLagamuwa-CoBScComp201p-007UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SMLagamuwa-CoBScComp201p-007UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B0AD8762726FAC600A4CD98 /* SMLagamuwa_CoBScComp201p_007UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMLagamuwa_CoBScComp201p_007UITests.swift; sourceTree = "<group>"; };
 		0B0AD8782726FAC600A4CD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B98649C272710C30040FF1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		269BDE1530F1DF90C3546FA9 /* Pods_SMLagamuwa_CoBScComp201p_007.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMLagamuwa_CoBScComp201p_007.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		332B758327384DB6004A2C73 /* TabTitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTitleText.swift; sourceTree = "<group>"; };
+		334108A727363757007823A1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		334108A927364493007823A1 /* GreenLineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenLineTextView.swift; sourceTree = "<group>"; };
+		334108AB27364521007823A1 /* InputGreenLineStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGreenLineStyle.swift; sourceTree = "<group>"; };
+		33665458273C487400570177 /* UserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStruct.swift; sourceTree = "<group>"; };
+		3367535F274163C600E02266 /* ReserveSlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveSlotView.swift; sourceTree = "<group>"; };
+		33675361274174F000E02266 /* ReserveSlotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveSlotViewModel.swift; sourceTree = "<group>"; };
+		337177FA2733B09600AD629B /* SlotUnitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotUnitView.swift; sourceTree = "<group>"; };
+		33799019272A9A65009B34B7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33AC40382736BC4800B8F6A2 /* DefaultButtonTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonTextView.swift; sourceTree = "<group>"; };
+		33AC403A2736C7D600B8F6A2 /* BookingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingPageView.swift; sourceTree = "<group>"; };
+		33CBDDEE2738EAD9003BBA6C /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		33E83C772737C2BA00801286 /* BookingPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingPageViewModel.swift; sourceTree = "<group>"; };
+		33E83C792737DD0B00801286 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		33E83C7B2737DEA900801286 /* ScanQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRView.swift; sourceTree = "<group>"; };
+		33F241E62734346A0000678A /* AvailableSlotsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSlotsView.swift; sourceTree = "<group>"; };
+		33F241EA2734351E0000678A /* SlotUnitStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotUnitStruct.swift; sourceTree = "<group>"; };
+		33F241EC2734356C0000678A /* AvailableSlotsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSlotsViewModel.swift; sourceTree = "<group>"; };
+		33F2D9E2272D7F2D006B49DB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		33F998B427398D9000DE8C57 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		33F998B62739929400DE8C57 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		33F998B82739A25200DE8C57 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		4318EE8BDD538BBBF1F12751 /* Pods-SMLagamuwa-CoBScComp201p-007Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMLagamuwa-CoBScComp201p-007Tests.release.xcconfig"; path = "Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007Tests/Pods-SMLagamuwa-CoBScComp201p-007Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9190196ED61078A5EA771158 /* Pods-SMLagamuwa-CoBScComp201p-007Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMLagamuwa-CoBScComp201p-007Tests.debug.xcconfig"; path = "Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007Tests/Pods-SMLagamuwa-CoBScComp201p-007Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D473C6AD8FEFC9FBA400183A /* Pods-SMLagamuwa-CoBScComp201p-007.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMLagamuwa-CoBScComp201p-007.release.xcconfig"; path = "Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007/Pods-SMLagamuwa-CoBScComp201p-007.release.xcconfig"; sourceTree = "<group>"; };
+		D50D9416C0E24F1D42AD9D13 /* Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests.debug.xcconfig"; path = "Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests/Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E209A71A23088B0E211AAE87 /* Pods_SMLagamuwa_CoBScComp201p_007_SMLagamuwa_CoBScComp201p_007UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMLagamuwa_CoBScComp201p_007_SMLagamuwa_CoBScComp201p_007UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0BCF1BDFD6020F8E2B7C07E /* Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests.release.xcconfig"; path = "Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests/Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests.release.xcconfig"; sourceTree = "<group>"; };
+		F13F0CA14079CCBA73210B41 /* Pods_SMLagamuwa_CoBScComp201p_007Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMLagamuwa_CoBScComp201p_007Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F414EC3953C3544F8991E25B /* Pods-SMLagamuwa-CoBScComp201p-007.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMLagamuwa-CoBScComp201p-007.debug.xcconfig"; path = "Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007/Pods-SMLagamuwa-CoBScComp201p-007.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E999FF70252701B9DD364FDF /* Pods_SMLagamuwa_CoBScComp201p_007.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50554520A38850255BBAFCB0 /* Pods_SMLagamuwa_CoBScComp201p_007Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61D986F211FAFBF4ACF4498 /* Pods_SMLagamuwa_CoBScComp201p_007_SMLagamuwa_CoBScComp201p_007UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +136,13 @@
 		0B0AD84D2726FAC400A4CD98 = {
 			isa = PBXGroup;
 			children = (
+				33799019272A9A65009B34B7 /* LaunchScreen.storyboard */,
 				0B0AD8582726FAC400A4CD98 /* SMLagamuwa-CoBScComp201p-007 */,
 				0B0AD86A2726FAC600A4CD98 /* SMLagamuwa-CoBScComp201p-007Tests */,
 				0B0AD8752726FAC600A4CD98 /* SMLagamuwa-CoBScComp201p-007UITests */,
 				0B0AD8572726FAC400A4CD98 /* Products */,
+				C279705083F71D771A7E4BD1 /* Pods */,
+				5C6F7D13A082908AEEDBF14B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,10 +159,15 @@
 		0B0AD8582726FAC400A4CD98 /* SMLagamuwa-CoBScComp201p-007 */ = {
 			isa = PBXGroup;
 			children = (
+				0BB6A0522727C3B7001BE507 /* ViewModels */,
+				0BB6A0502727C397001BE507 /* Models */,
+				0BB6A04F2727C37F001BE507 /* Views */,
+				0B98649C272710C30040FF1B /* GoogleService-Info.plist */,
 				0B0AD8592726FAC400A4CD98 /* SMLagamuwa_CoBScComp201p_007App.swift */,
 				0B0AD85B2726FAC400A4CD98 /* ContentView.swift */,
 				0B0AD85D2726FAC600A4CD98 /* Assets.xcassets */,
 				0B0AD8622726FAC600A4CD98 /* Info.plist */,
+				33F2D9E2272D7F2D006B49DB /* Data.swift */,
 				0B0AD85F2726FAC600A4CD98 /* Preview Content */,
 			);
 			path = "SMLagamuwa-CoBScComp201p-007";
@@ -130,6 +199,70 @@
 			path = "SMLagamuwa-CoBScComp201p-007UITests";
 			sourceTree = "<group>";
 		};
+		0BB6A04F2727C37F001BE507 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33F241E62734346A0000678A /* AvailableSlotsView.swift */,
+				334108A727363757007823A1 /* SignInView.swift */,
+				337177FA2733B09600AD629B /* SlotUnitView.swift */,
+				334108A927364493007823A1 /* GreenLineTextView.swift */,
+				33AC40382736BC4800B8F6A2 /* DefaultButtonTextView.swift */,
+				33AC403A2736C7D600B8F6A2 /* BookingPageView.swift */,
+				33E83C792737DD0B00801286 /* SettingsView.swift */,
+				33E83C7B2737DEA900801286 /* ScanQRView.swift */,
+				332B758327384DB6004A2C73 /* TabTitleText.swift */,
+				33CBDDEE2738EAD9003BBA6C /* RegistrationView.swift */,
+				33F998B62739929400DE8C57 /* MainView.swift */,
+				3367535F274163C600E02266 /* ReserveSlotView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0BB6A0502727C397001BE507 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33F241EA2734351E0000678A /* SlotUnitStruct.swift */,
+				33665458273C487400570177 /* UserStruct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0BB6A0522727C3B7001BE507 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				33F241EC2734356C0000678A /* AvailableSlotsViewModel.swift */,
+				334108AB27364521007823A1 /* InputGreenLineStyle.swift */,
+				33E83C772737C2BA00801286 /* BookingPageViewModel.swift */,
+				33F998B427398D9000DE8C57 /* SignInViewModel.swift */,
+				33F998B82739A25200DE8C57 /* RegistrationViewModel.swift */,
+				33675361274174F000E02266 /* ReserveSlotViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5C6F7D13A082908AEEDBF14B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				269BDE1530F1DF90C3546FA9 /* Pods_SMLagamuwa_CoBScComp201p_007.framework */,
+				E209A71A23088B0E211AAE87 /* Pods_SMLagamuwa_CoBScComp201p_007_SMLagamuwa_CoBScComp201p_007UITests.framework */,
+				F13F0CA14079CCBA73210B41 /* Pods_SMLagamuwa_CoBScComp201p_007Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C279705083F71D771A7E4BD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F414EC3953C3544F8991E25B /* Pods-SMLagamuwa-CoBScComp201p-007.debug.xcconfig */,
+				D473C6AD8FEFC9FBA400183A /* Pods-SMLagamuwa-CoBScComp201p-007.release.xcconfig */,
+				D50D9416C0E24F1D42AD9D13 /* Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests.debug.xcconfig */,
+				F0BCF1BDFD6020F8E2B7C07E /* Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests.release.xcconfig */,
+				9190196ED61078A5EA771158 /* Pods-SMLagamuwa-CoBScComp201p-007Tests.debug.xcconfig */,
+				4318EE8BDD538BBBF1F12751 /* Pods-SMLagamuwa-CoBScComp201p-007Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B0AD87B2726FAC600A4CD98 /* Build configuration list for PBXNativeTarget "SMLagamuwa-CoBScComp201p-007" */;
 			buildPhases = (
+				0785CBCED56ECD6B45FC5327 /* [CP] Check Pods Manifest.lock */,
 				0B0AD8522726FAC400A4CD98 /* Sources */,
 				0B0AD8532726FAC400A4CD98 /* Frameworks */,
 				0B0AD8542726FAC400A4CD98 /* Resources */,
+				54A8DF64CA62DC138D692A56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +289,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B0AD87E2726FAC600A4CD98 /* Build configuration list for PBXNativeTarget "SMLagamuwa-CoBScComp201p-007Tests" */;
 			buildPhases = (
+				304845EC5FB22EFC4AE3DD41 /* [CP] Check Pods Manifest.lock */,
 				0B0AD8632726FAC600A4CD98 /* Sources */,
 				0B0AD8642726FAC600A4CD98 /* Frameworks */,
 				0B0AD8652726FAC600A4CD98 /* Resources */,
@@ -172,9 +308,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B0AD8812726FAC600A4CD98 /* Build configuration list for PBXNativeTarget "SMLagamuwa-CoBScComp201p-007UITests" */;
 			buildPhases = (
+				B8D401C1B39C2986D597292C /* [CP] Check Pods Manifest.lock */,
 				0B0AD86E2726FAC600A4CD98 /* Sources */,
 				0B0AD86F2726FAC600A4CD98 /* Frameworks */,
 				0B0AD8702726FAC600A4CD98 /* Resources */,
+				7ECA574FF70DA6749806D3C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +372,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B0AD8612726FAC600A4CD98 /* Preview Assets.xcassets in Resources */,
+				3379901A272A9A65009B34B7 /* LaunchScreen.storyboard in Resources */,
 				0B0AD85E2726FAC600A4CD98 /* Assets.xcassets in Resources */,
+				0B98649D272710C30040FF1B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +394,137 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0785CBCED56ECD6B45FC5327 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMLagamuwa-CoBScComp201p-007-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		304845EC5FB22EFC4AE3DD41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMLagamuwa-CoBScComp201p-007Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54A8DF64CA62DC138D692A56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007/Pods-SMLagamuwa-CoBScComp201p-007-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007/Pods-SMLagamuwa-CoBScComp201p-007-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007/Pods-SMLagamuwa-CoBScComp201p-007-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ECA574FF70DA6749806D3C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests/Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests/Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests/Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8D401C1B39C2986D597292C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0B0AD8522726FAC400A4CD98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334108AC27364521007823A1 /* InputGreenLineStyle.swift in Sources */,
+				33675360274163C600E02266 /* ReserveSlotView.swift in Sources */,
+				33F2D9E3272D7F2D006B49DB /* Data.swift in Sources */,
+				33AC40392736BC4800B8F6A2 /* DefaultButtonTextView.swift in Sources */,
+				33E83C782737C2BA00801286 /* BookingPageViewModel.swift in Sources */,
+				337177FB2733B09600AD629B /* SlotUnitView.swift in Sources */,
+				33675362274174F000E02266 /* ReserveSlotViewModel.swift in Sources */,
+				33F998B92739A25200DE8C57 /* RegistrationViewModel.swift in Sources */,
+				33F998B72739929400DE8C57 /* MainView.swift in Sources */,
+				33CBDDEF2738EAD9003BBA6C /* RegistrationView.swift in Sources */,
+				33F241EB2734351E0000678A /* SlotUnitStruct.swift in Sources */,
+				33AC403B2736C7D600B8F6A2 /* BookingPageView.swift in Sources */,
+				33E83C7A2737DD0B00801286 /* SettingsView.swift in Sources */,
+				334108AA27364493007823A1 /* GreenLineTextView.swift in Sources */,
 				0B0AD85C2726FAC400A4CD98 /* ContentView.swift in Sources */,
+				33F241ED2734356C0000678A /* AvailableSlotsViewModel.swift in Sources */,
+				332B758427384DB6004A2C73 /* TabTitleText.swift in Sources */,
 				0B0AD85A2726FAC400A4CD98 /* SMLagamuwa_CoBScComp201p_007App.swift in Sources */,
+				33F998B527398D9000DE8C57 /* SignInViewModel.swift in Sources */,
+				33E83C7C2737DEA900801286 /* ScanQRView.swift in Sources */,
+				33665459273C487400570177 /* UserStruct.swift in Sources */,
+				334108A827363757007823A1 /* SignInView.swift in Sources */,
+				33F241E72734346A0000678A /* AvailableSlotsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +678,7 @@
 		};
 		0B0AD87C2726FAC600A4CD98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F414EC3953C3544F8991E25B /* Pods-SMLagamuwa-CoBScComp201p-007.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +701,7 @@
 		};
 		0B0AD87D2726FAC600A4CD98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D473C6AD8FEFC9FBA400183A /* Pods-SMLagamuwa-CoBScComp201p-007.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +724,7 @@
 		};
 		0B0AD87F2726FAC600A4CD98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9190196ED61078A5EA771158 /* Pods-SMLagamuwa-CoBScComp201p-007Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +747,7 @@
 		};
 		0B0AD8802726FAC600A4CD98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4318EE8BDD538BBBF1F12751 /* Pods-SMLagamuwa-CoBScComp201p-007Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +770,7 @@
 		};
 		0B0AD8822726FAC600A4CD98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50D9416C0E24F1D42AD9D13 /* Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +791,7 @@
 		};
 		0B0AD8832726FAC600A4CD98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0BCF1BDFD6020F8E2B7C07E /* Pods-SMLagamuwa-CoBScComp201p-007-SMLagamuwa-CoBScComp201p-007UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
