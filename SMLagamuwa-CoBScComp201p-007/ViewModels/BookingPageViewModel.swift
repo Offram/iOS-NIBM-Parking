@@ -27,7 +27,7 @@ class BookingPageViewModel: ObservableObject {
                 
                 let slotStatus: SlotStatus = SlotStatusString().getSlotStatusFromString(status: slot.status)
                 
-                return SlotUnit(slotID: String(slot.slotID), vip: slotType, slotStatus: slotStatus)
+                return SlotUnit(slotID: String(slot.slotID), vip: slotType, slotStatus: slotStatus, vehicleNo: slot.vehicleNo)
             }
         }
     }
