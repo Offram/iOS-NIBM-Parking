@@ -13,18 +13,18 @@ class AvailableSlotsViewModel: ObservableObject {
     @Published var slotUnits = [SlotUnit]()
     
     var slotArray = [
-        SlotUnit(slotID:"One", vip: true, slotStatus: SlotStatus.available),
-        SlotUnit(slotID:"Two", vip: true, slotStatus: SlotStatus.available),
-        SlotUnit(slotID:"Three", vip: true, slotStatus: SlotStatus.booked),
-        SlotUnit(slotID:"Four", vip: true, slotStatus: SlotStatus.reserved),
-        SlotUnit(slotID:"Five", vip: false, slotStatus: SlotStatus.available),
-        SlotUnit(slotID:"Six", vip: false, slotStatus: SlotStatus.available),
-        SlotUnit(slotID:"Seven", vip: false, slotStatus: SlotStatus.booked),
-        SlotUnit(slotID:"Eight", vip: false, slotStatus: SlotStatus.available),
-        SlotUnit(slotID:"Nine", vip: false, slotStatus: SlotStatus.available),
-        SlotUnit(slotID:"Ten", vip: false, slotStatus: SlotStatus.reserved),
-        SlotUnit(slotID:"Eleven", vip: false, slotStatus: SlotStatus.available),
-        SlotUnit(slotID:"Twelve", vip: false, slotStatus: SlotStatus.available),
+        SlotUnit(slotID:"One", vip: true, slotStatus: SlotStatus.available, vehicleNo: "AAA-9999"),
+        SlotUnit(slotID:"Two", vip: true, slotStatus: SlotStatus.available, vehicleNo: "AAA-9999"),
+        SlotUnit(slotID:"Three", vip: true, slotStatus: SlotStatus.booked, vehicleNo: "AAA-9999"),
+        SlotUnit(slotID:"Four", vip: true, slotStatus: SlotStatus.reserved, vehicleNo: "AAA-9999"),
+        SlotUnit(slotID:"Five", vip: false, slotStatus: SlotStatus.available, vehicleNo: "AAA-9999"),
+        SlotUnit(slotID:"Six", vip: false, slotStatus: SlotStatus.available, vehicleNo: "AAA-9999"),
+        SlotUnit(slotID:"Seven", vip: false, slotStatus: SlotStatus.booked, vehicleNo: "AAA-9999"),
+        SlotUnit(slotID:"Eight", vip: false, slotStatus: SlotStatus.available, vehicleNo: "AAA-9999"),
+        SlotUnit(slotID:"Nine", vip: false, slotStatus: SlotStatus.available, vehicleNo: "AAA-9999"),
+        SlotUnit(slotID:"Ten", vip: false, slotStatus: SlotStatus.reserved, vehicleNo: "AAA-9999"),
+        SlotUnit(slotID:"Eleven", vip: false, slotStatus: SlotStatus.available, vehicleNo: "AAA-9999"),
+        SlotUnit(slotID:"Twelve", vip: false, slotStatus: SlotStatus.available, vehicleNo: "AAA-9999"),
     ]
     
     func getSlots() {
@@ -42,7 +42,7 @@ class AvailableSlotsViewModel: ObservableObject {
                 
                 let slotStatus: SlotStatus = SlotStatusString().getSlotStatusFromString(status: slot.status)
                 
-                return SlotUnit(slotID: String(slot.slotID), vip: slotType, slotStatus: slotStatus)
+                return SlotUnit(slotID: String(slot.slotID), vip: slotType, slotStatus: slotStatus, vehicleNo: slot.vehicleNo)
             }
         }
         

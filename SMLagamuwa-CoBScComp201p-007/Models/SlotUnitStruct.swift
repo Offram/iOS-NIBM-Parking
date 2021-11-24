@@ -12,6 +12,7 @@ struct SlotUnit: Identifiable {
     let slotID: String
     let vip: Bool
     let slotStatus: SlotStatus
+    let vehicleNo: String
 }
 
 struct SlotModel: Codable, Identifiable {

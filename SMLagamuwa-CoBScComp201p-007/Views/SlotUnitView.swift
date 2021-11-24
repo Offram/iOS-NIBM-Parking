@@ -10,6 +10,7 @@ import SwiftUI
 struct SlotUnitView: View {
     var slotNumber = "0";
     var vip = false;
+    var vehicleNo: String = "sss";
     var slotStatus = SlotStatus.booked;
     
     
@@ -18,6 +19,11 @@ struct SlotUnitView: View {
             
             Text("Slot \(slotNumber) ").foregroundColor(getForegroundColor(status: slotStatus))
             Spacer()
+            if(!vehicleNo.isEmpty) {
+                Text(vehicleNo)
+                    .foregroundColor(Color.black)
+                Spacer()
+            }
             if(vip){
                 Text("VIP")
                     .bold()

@@ -22,7 +22,11 @@ struct AvailableSlotsView: View {
                         Button(action: {
                             self.tabSelection = 2
                         }) {
-                            SlotUnitView(slotNumber: item.slotID, vip: item.vip, slotStatus: item.slotStatus)
+                            SlotUnitView(
+                                slotNumber: item.slotID,
+                                vip: item.vip,
+                                vehicleNo: item.vehicleNo,
+                                slotStatus: item.slotStatus)
                         }
                         .disabled(item.slotStatus != SlotStatus.available)
                     }
